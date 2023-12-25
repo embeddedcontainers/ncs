@@ -13,6 +13,6 @@ Building images locally ensures you can trust the source of the image, as well a
 _Build the image_
 
 ```
-docker build --build-arg NCS_SDK_VERSION=v2.5.0 -f "./ncs/Dockerfile" -t ncs:2.5.0SDK "./ncs"
+docker build --build-arg NCS_SDK_VERSION=v2.5.0 -f "./ncs/Dockerfile" -t ncs:v2.5.0SDK "./ncs"
 
 ```
