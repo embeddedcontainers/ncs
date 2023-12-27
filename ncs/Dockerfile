@@ -8,10 +8,6 @@ RUN \
   apt-get -y update \
   && apt-get -y install --no-install-recommends \
   ca-certificates \
-  cmake \
-  device-tree-compiler \
-  git \
-  ninja-build \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
@@ -30,19 +26,3 @@ RUN \
   wget \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
-
-# Python
-
-ENV VIRTUAL_ENV=/opt/venv
-RUN \
-  apt-get -y update \
-  && apt-get -y install --no-install-recommends \
-  python3 \
-  python3-pip \
-  python3-venv \
-  && python3 -m venv $VIRTUAL_ENV
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-
-# West
-
-RUN pip install --no-cache-dir wheel west
