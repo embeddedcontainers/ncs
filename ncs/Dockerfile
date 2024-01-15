@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ARG NCS_SDK_VERSION=v2.5.0
+ARG NCS_SDK_VERSION=v2.5.1
 
 # OS dependencies and packages
 
