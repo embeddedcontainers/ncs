@@ -25,4 +25,5 @@ RUN \
   && apt-get remove -y --purge \
   wget \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf ncs/downloads
