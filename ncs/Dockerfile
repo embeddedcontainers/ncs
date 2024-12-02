@@ -44,4 +44,4 @@ EOT
 # Currently this is not supported in GitHub Actions
 # See https://github.com/actions/runner/issues/1964
 ENTRYPOINT [ "nrfutil", "toolchain-manager", "launch", "/bin/bash", "--", "/root/entry.sh" ]
-COPY ./entry.sh /root/entry.sh
+COPY ./ncs/entry.sh /root/entry.sh
