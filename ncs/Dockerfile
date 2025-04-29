@@ -20,8 +20,8 @@ RUN \
   && wget https://developer.nordicsemi.com/.pc-tools/nrfutil/x64-linux/nrfutil \
   && chmod +x nrfutil \
   && mv nrfutil /usr/bin \
-  && nrfutil install toolchain-manager \
-  && nrfutil toolchain-manager install --ncs-version ${NCS_SDK_VERSION} \
+  && nrfutil install sdk-manager \
+  && nrfutil sdk-manager toolchain install --ncs-version ${NCS_SDK_VERSION} \
   && apt-get remove -y --purge \
   wget \
   && apt-get clean \
